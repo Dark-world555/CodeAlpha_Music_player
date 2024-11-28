@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <img src="./svgs/playlist.svg" alt="playlist" id="playlist-img">
+        <h2>Suno aur kho Jaao 🤹🏼‍♂️</h2>
+        <img src="./svgs/music.svg" alt="music" id="music-img">
+    </header>
+    <main>
+        <div class="left">
+<div class="song-image">
+<img src="musicanim.webp" alt="anim" id="musicanim">
+</div>
+<div class="volume-div">
+    <div class="volume-img">
+        <img src="./svgs/volume.svg" alt="volume" id="vol-svg" >
+    </div>
+    <input type="range" id="volume-range" onchange="volume()">
+    
+</div>
+        </div>
+        <div class="right">
+<div class="details">
+    <h3 id="song-name">Tumhe Kitna Pyaar Karte</h3>
+    <h5 id="song-singer">Arijit Singh</h5>
+</div>
+<input type="range" id="song-duration" onchange="duration()">
+<div class="controls">
+    <div class="prev-img">
+        <img src="./svgs/prev.svg" alt="prev" id="prev-img" onclick="previousSong()">
+    </div>
+    <div class="play-pause">
+        <img src="./svgs/play.svg" alt="play" id="play-pause" onclick="playPause()">
+    </div>
+   <div class="next-img">
+    <img src="./svgs/next.svg" alt="next" id="next-img" onclick="nextSong()">
+</div>
+    
+   
+</div>
+        </div>
+        <div class="playlist">
+            <div class="playlist-song">
+                <img src="./images/tumhe_kitna_pyaar_karte.jpg" alt="img">
+                <div class="song-details">
+                   <h2>Tumhe Kitna Pya..</h2>
+                   <h5>Arijit Singh</h5>
+                </div>
+               </div>
+               <div class="playlist-song">
+                <img src="./images/aaj_phir_tumpe.jpg" alt="img">
+                <div class="song-details">
+                   <h2>Aaj Phir Tu..</h2>
+                   <h5>Arijit Singh</h5>
+                </div>
+               </div>
+               <div class="playlist-song">
+                <img src="./images/tu_jaane_na.jpg" alt="img">
+                <div class="song-details">
+                   <h2>Tu Jaane na</h2>
+                   <h5>Lofi song</h5>
+                </div>
+               </div>
+               <div class="playlist-song">
+                <img src="./images/Dhadkan.jpg" alt="img">
+                <div class="song-details">
+                   <h2>Dhadkan</h2>
+                   <h5>Mani Chopra</h5>
+                </div>
+               </div>
+               <div class="playlist-song">
+                <img src="./images/tum_chuppa_na_sakoge.jpg" alt="img">
+                <div class="song-details">
+                   <h2>Tum Chupa na..</h2>
+                   <h5>Junaid Tyagi</h5>
+                </div>
+               </div>
+            <div class="playlist-song">
+             <img src="./images/image1.jpg" alt="img">
+             <div class="song-details">
+                <h2>Tune 1</h2>
+                <h5>Tunes</h5>
+             </div>
+            </div>
+            <div class="playlist-song">
+                <img src="./images/image2.jpg" alt="img">
+                <div class="song-details">
+                   <h2>Tune 2</h2>
+                   <h5>Tunes</h5>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="./images/image3.jpg" alt="img">
+             <div class="song-details">
+                <h2>Tune 3</h2>
+                <h5>Tunes</h5>
+             </div>
+            </div>
+            <div class="playlist-song">
+                <img src="./images/image4.jpg" alt="img">
+                <div class="song-details">
+                   <h2>Tune 4</h2>
+                   <h5>Tunes</h5>
+                </div>
+            </div>
+        </div>
+        <br>
+    </main>
+ <script src="./js/script.js"></script>   
+</body>
+</html>
